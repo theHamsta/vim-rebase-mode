@@ -1,11 +1,11 @@
 function! VimRebaseModeMaps()
-    nnoremap <buffer> <leader>p 0ciwp<ESC>j
-    nnoremap <buffer> <leader>r 0ciwr<ESC>j
-    nnoremap <buffer> <leader>e 0ciwe<ESC>j
-    nnoremap <buffer> <leader>s 0ciws<ESC>j
-    nnoremap <buffer> <leader>f 0ciwf<ESC>j
-    nnoremap <buffer> <leader>x 0ciwe<ESC>j
-    nnoremap <buffer> <leader>d 0ciwd<ESC>j
+    nnoremap <buffer> P 0ciwpick<ESC>j
+    nnoremap <buffer> R 0ciwreword<ESC>j
+    nnoremap <buffer> E 0ciwedit<ESC>j
+    nnoremap <buffer> S 0ciwsquash<ESC>j
+    nnoremap <buffer> F 0ciwfixup<ESC>j
+    nnoremap <buffer> X 0ciwx<ESC>j
+    nnoremap <buffer> D 0ciwdrop<ESC>j
 endfunction
 
 autocmd FileType gitrebase call VimRebaseModeMaps()
